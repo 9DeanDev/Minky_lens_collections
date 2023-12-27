@@ -1,0 +1,217 @@
+/* CSS for header */
+@media only screen and (max-width: 430px) {}
+
+#header {
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.header_container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.font-icon {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+
+#main-menu>li>a {
+    padding: 18px 18px;
+    position: relative;
+}
+
+#main-menu>li>a::before {
+    content: "";
+    background: brown;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu li:hover a::before {
+    width: 80%;
+}
+
+#main-menu li:hover>.sub-menu {
+    display: block;
+}
+
+#main-menu ul.sub-menu {
+    list-style: none;
+    padding: 0px 3px;
+    margin: 18px 12px;
+    position: absolute;
+    text-align: left;
+    font-weight: 100;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+
+#main-menu ul.sub-menu li {
+    font-size: 14px;
+    width: 368px;
+    padding: 10px 2px;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+
+#main-menu ul.sub-menu li:last-child {
+    border-bottom: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu {
+    left: 364px;
+    top: 29px;
+    width: 150px;
+}
+
+#main-menu li.has-child::after {
+    font: var(--fa-font-solid);
+    content: "\f107";
+    top: 0px;
+    right: 5px;
+    padding: 7px 0;
+}
+
+#main-menu li:hover>a {
+    color: brown;
+}
+
+#main-menu>li:hover::after {
+    color: brown;
+}
+
+#main-menu .sub-menu li:hover {
+    color: brown;
+}
+
+#main-menu .sub-menu li.has-child::after {
+    font: var(--fa-font-solid);
+    content: "\f105";
+    padding: 7px 31px;
+}
+
+/* CSS for content */
+table.main_content {
+    position: relative;
+    background-color: white;
+    text-align: center;
+}
+
+table.i {
+    cursor: pointer;
+}
+
+table.maincontent {
+    width: 90%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+table.maincontent td {
+    /* width: 20%; */
+    margin: 0;
+    padding: 15px 15px;
+}
+
+#footer {
+    width: 100%;
+    padding: 10px 100px 0px 100px;
+}
+
+#footer th,
+#footer td {
+    width: 25%;
+    padding: 5px 5px 5px 5px;
+}
+
+#footer input#email {
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#footer input#loginn {
+    border-radius: 5px;
+    margin-left: 246px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* a:hover{
+    color: rgb(206, 137, 47);
+} */
+.iconfooter {
+    width: 20px;
+    height: 20px;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content {
+    width: 200px;
+    height: 200px;
+    transition: 1000ms;
+}
+
+a b {
+    color: red;
+}
+
+h1 a:hover {
+    color: brown;
+}
+
+table.maincontent img:hover {
+    width: 225px;
+    height: 225px;
+}
+
+#choose {
+    padding: 0 auto;
+    margin: -2px 4px;
+    font-size: 20px;
+}
